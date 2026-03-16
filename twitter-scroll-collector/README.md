@@ -24,7 +24,7 @@ Manifest V3 Chrome extension that scrolls the current X/Twitter page and collect
 4. Select this folder:
 
 ```text
-/Users/rohitraj/codex-gui/chrome-extension/twitter-scroll-collector
+./twitter-scroll-collector
 ```
 
 ## Use
