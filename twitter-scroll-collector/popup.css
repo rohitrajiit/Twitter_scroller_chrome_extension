@@ -1,0 +1,94 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(180deg, #15202b 0%, #0f1419 100%);
+  color: #f7f9f9;
+}
+
+.panel {
+  width: 360px;
+  padding: 16px;
+}
+
+h1 {
+  margin: 0 0 8px;
+  font-size: 20px;
+}
+
+.subtle {
+  margin: 0 0 16px;
+  color: #8b98a5;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.field {
+  display: block;
+  margin-bottom: 12px;
+}
+
+.field span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: #cfd9de;
+}
+
+input {
+  width: 100%;
+  border: 1px solid #38444d;
+  border-radius: 10px;
+  padding: 10px 12px;
+  background: #192734;
+  color: #f7f9f9;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+button {
+  border: 1px solid #38444d;
+  border-radius: 999px;
+  padding: 10px 12px;
+  background: #17212b;
+  color: #f7f9f9;
+  cursor: pointer;
+}
+
+button.primary {
+  background: #1d9bf0;
+  border-color: #1d9bf0;
+  color: #fff;
+}
+
+button:hover {
+  filter: brightness(1.08);
+}
+
+.status {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+#urlText {
+  word-break: break-all;
+}
+
+.message {
+  min-height: 18px;
+  margin: 12px 0 0;
+  font-size: 12px;
+  color: #8b98a5;
+}

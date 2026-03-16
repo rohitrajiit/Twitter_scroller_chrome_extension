@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitter Scroll Collector</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="panel">
+      <h1>Tweet Collector</h1>
+      <p class="subtle">Open an X/Twitter timeline, search results page, or profile first.</p>
+
+      <label class="field">
+        <span>Max tweets</span>
+        <input id="maxTweets" type="number" min="10" step="10" value="200">
+      </label>
+
+      <label class="field">
+        <span>Scroll delay (ms)</span>
+        <input id="scrollDelay" type="number" min="500" step="100" value="1500">
+      </label>
+
+      <label class="field">
+        <span>Stop after idle rounds</span>
+        <input id="maxIdleRounds" type="number" min="1" step="1" value="6">
+      </label>
+
+      <div class="actions">
+        <button id="startButton" class="primary">Start</button>
+        <button id="stopButton">Stop</button>
+      </div>
+
+      <div class="actions">
+        <button id="refreshButton">Refresh</button>
+        <button id="clearButton">Clear</button>
+      </div>
+
+      <div class="actions">
+        <button id="jsonButton">Export JSON</button>
+        <button id="csvButton">Export CSV</button>
+      </div>
+
+      <section class="status">
+        <div><strong>Status:</strong> <span id="statusText">Idle</span></div>
+        <div><strong>Collected:</strong> <span id="countText">0</span></div>
+        <div><strong>URL:</strong> <span id="urlText">-</span></div>
+      </section>
+
+      <p id="message" class="message"></p>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

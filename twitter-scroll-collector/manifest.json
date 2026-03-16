@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "Twitter Scroll Collector",
+  "version": "0.1.0",
+  "description": "Scroll an X/Twitter timeline and collect tweet data from the current page.",
+  "permissions": [
+    "activeTab",
+    "downloads",
+    "storage",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://x.com/*",
+    "https://twitter.com/*"
+  ],
+  "action": {
+    "default_title": "Twitter Scroll Collector",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}
